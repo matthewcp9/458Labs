@@ -1,0 +1,23 @@
+import random
+def Trinh(hist=[], score=[], query = False):
+
+    def checkOppRatio(hist):
+        turnsPassed = len(hist)
+        numCs = 0.0
+
+        for turn in hist:
+            if turn[1].upper() == 'C': 
+                numCs += 1
+        return numCs/turnsPassed
+        
+    if query:
+        return ["Sand Gambler", "He lost all his money in Vegas so now he's gambling with sand."]
+        
+    turnsPassed = len(hist)
+    if turnsPassed > 300:
+            return 'D'
+    else:
+        if random.random() >= (.45 + turnsPassed * .00133):
+            return 'C'
+        else:
+            return 'D'
