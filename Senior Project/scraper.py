@@ -3,7 +3,6 @@ from requests import Session
 from urllib.request import Request, urlopen
 from functools import lru_cache
 
-#response = requests.get('http://www.metacritic.com/user/Overanalytical') # the user i used to check the html of the site
 gameurl = 'https://byroredux-metacritic.p.mashape.com/search/game'
 key = "clcFDDQWvcmshavNiBerDhWS2mPbp1VzntCjsnLyj1W2ZiKb97"
 hdr = {'User-Agent': 'Chrome/37.0.2049.0'}
@@ -125,7 +124,6 @@ def getUserReviews(user, games):
     if not next_check_soup:
         return games
     else:
-        #print(next_check_soup[0]['href'].split('/')[2])
         return getUserReviews(next_check_soup[0]['href'].split('/')[2], games)
 
 def reloadUsrList(userlist):
