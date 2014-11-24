@@ -1,6 +1,0 @@
-#BlueJ class context
-comment0.params=
-comment0.target=Rock()
-comment1.params=distance\ cls
-comment1.target=java.util.List\ getObjectsInRange(int,\ java.lang.Class)
-numComments=2
