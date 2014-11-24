@@ -1,0 +1,18 @@
+#Examples of a 3 variable SAT problem
+0 1 1 #means NOT(X1) OR X2 OR X3
+1 0 - #means X1 OR NOT(X2)
+1 1 - #means X1 OR X2
+0 0 0 #means NOT(X1) OR NOT(X2) OR NOT(X3)
+- - 0 #means NOT(X3)
+#If all Xn is Zero or One per clause, then Xn must be that
+#If a clause has all dashes except Xn, then Xn must be that
+#If all 1's and all 0's in two diff clauses, unsatisfiable
+#if all dashes except Xn and another clause has all dashes #except Xn and /Xn means unsatisfiable
+#A = False, B = False, C = False
+
+#(/x1 v x2 v x3) ^ (x1 v /x2) ^ (x1 v x2) ^ (/x1 v /x2 v /x3)
+#(x2 v /x2 v x3) ^ (x1 v x2) ^ (/x1 v /x2 v /x3) ^ /x3
+#(x1 v x2 v x3) ^ (/x1 v /x2 v /x3) ^ x3
+#(x2 v /x2 v x3 v /x3) ^ x3
+#(x2 v /x2 v x3)
+#x2 v /x2 v x3 v /x3

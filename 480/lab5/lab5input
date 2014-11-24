@@ -1,0 +1,9 @@
+#Example file using figure 10.3, all var assumed BLOCK
+ON A Table
+ON B Table
+ON C A
+CLEAR B
+CLEAR C
+GOAL
+ON A B
+ON B C

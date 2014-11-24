@@ -1,0 +1,51 @@
+8.2) The knowledge base does not entail ∀x P(x). This is because given a model with domain {a, b, c}, when the KB is run with this domain, it will accept P(a) and P(b), but it does not entail P(c) which means that the KB does not entail all x in the model.
+
+8.3) Yes the sentence is valid because when the inputs/terms are the same, the sentence is true. 
+
+8.6) a. True, in 8.3 the right hand side was shown to be true (for all y there is at least one z (where the y term is the z term) where y = z) and the left hand side is true at least once due to the identity clause.
+b. The sentence is a tautology so it must be true for all cases
+c. Since x = x is always valid (identity properties) then this is true for al cases.
+
+8.9) 
+a. i. 2  ii. 1  iii. 3
+b. i. 1  ii. 3  iii. 2  iv. 2
+c. i. 1  ii. 1  iii. 3  iv. 1
+d. i. 1  ii. 1  iii. 3  iv. 2
+e. i. 1  ii. 3  iii. 3  iv. 2
+
+8.10) 
+a. Occupation(Emily, Surgeon) or Occupation(Emily, Doctor)
+b. 3o (o = Actor) AND Occupation(Joe, Actor) AND Occupation(Joe, o)
+c. ∀p Occupation(p, Surgeon) ->  Occupation(p, Doctor)
+d. /3p Occupation(p, lawyer) AND Customer(Joe, p)
+e. 3p Boss(p, Emily) ^ Occupation(p, Lawyer)
+f. 3p ∀g Occupation(p, Lawyer) AND Occupation(g, Doctor) AND Customer(p, g)
+g. ∀p 3g Occupation(p, Surgeon) AND Customer(p, g) AND Occupation(g, Lawyer)
+
+8.13)
+a. ∀s Breezy(s) => 3r Adjacent (r, s) ∧ Pit(r)
+/3s Breezy(s) => ∀r Adjacent (r, s) ∧ /Pit(r)
+
+These two are equivalent because these statements' existential quantifiers are the equivalent to each other in FOL.
+When you take the negative of the "ALL" quantifier, you get NOT "THERE EXISTS" and when you take the negative of the
+"THERE EXISTS" you get that statement is negative for ALL domain elements. Equation 8.4 is the same as this because
+these two statements cover all domains, when it is not breezy and when it is breezy. 
+
+b. 3s Pit(s) => ∀r Adjacent (r, s) ∧ Breezy(r) 
+This statement is incomplete compared to Equation 8.4 because the KB doesn't know what happens when there isn't a pit at a square. So you must add the following axiom:
+/3s Pit(s) => ∀r Adjacent (r, s) ∧ /Breezy(r) 
+which covers the other case.
+
+8.24
+a. 3x Student(x) AND Takes(x, French, Spring 2001)
+b. ∀x,s Student(x) AND Takes(x, French, s) => Passes(x, French, s)
+c. 3x Student(x) AND Takes(x, Greek, Spring 2001) AND ∀y y!=x => /Takes(y, Greek, Spring 2001)
+d. ∀s 3x ∀y Score(x, Greek, s) > Score(y, French, s)
+e. ∀x Person(x) AND (3y,z Policy(y) AND Buys(x, y, z)) => Smart(x)
+f. ∀x,y,z Person(x) AND Person(y) AND Expensive(y) => /Buys(x,y,z)
+g. 3x Agent(x) ∀y,z Policy(y) AND Sells(x,y,z) => (Person(z) AND /Insured(z))
+h. 3x ∀y Barber(x) AND Man(y) AND /Shaves(y,y) => Shaves(x,y)
+i. ∀x PErson(x) AND Born(x, UK) AND (∀y PArent(y,x)) => ((3r Citizen(y, UK, r)) OR Resident(y, UK))) => Citizen(x, UK, Birth)
+j. ∀x Person(x) AND /Born(x,UK) AND (3y Parent(y,x)) AND Citizen(y, UK, Birth)) => Citizen (x, UK, Descent)
+k. ∀x Politician(x) => (3y ∀t Person(y) AND Fools(x, y, t)) AND (3t∀y Person(y) => Fools(x,y,t)) AND /(∀t∀y Person(y) => Fools(x,y,t))
+l. ∀x,y NAtionality(x, German) ^ Speaks(x, y)

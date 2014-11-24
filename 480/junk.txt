@@ -1,0 +1,30 @@
+['Harry', 'Peter', 'Zara', 'Beatrice', 'Eugenie', 'Louise', 'James']
+['William', 'Harry', 'Peter', 'Zara', 'Beatrice', 'Eugenie', 'Louise', 'James']
+['Andrew', 'Edward']
+['George', 'Mum']
+['George', 'Mum', 'Elizabeth', 'Philip', 'Andrew', 'Sarah']
+
+
+George Mum Elizabeth,Margaret None Male  
+Mum George Elizabeth,Margaret None Female
+Margaret None None George,Mum Female
+Elizabeth Philip Charles,Anne,Andrew,Edward George,Mum Female
+Philip Elizabeth Charles,Anne,Andrew,Edward None Male
+Spencer Kydd Diana None Male
+Kydd Spencer Diana None Female
+Diana Charles William,Harry Spencer,Kydd Female
+Charles Diana William,Harry Elizabeth,Philip Male
+Anne Mark Peter,Zara Elizabeth,Philip Female
+Mark Anne Peter,Zara None Male
+Andrew Sarah Beatrice,Eugenie Elizabeth,Philip Male
+Sarah Andrew Beatrice,Eugenie None Female
+Edward Sophie Louise,James Elizabeth,Philip Male
+Sophie Edward Louise,James None Female
+William None None Diana,Charles Male
+Harry None None Diana,Charles Male
+Peter None None Anne,Mark Male
+Zara None None Anne,Mark Female
+Beatrice None None Andrew,Sarah Female
+Eugenie None None Andrew,Sarah Female
+Louise None None Edward,Sophie Female
+James None None Edward,Sophie Male
